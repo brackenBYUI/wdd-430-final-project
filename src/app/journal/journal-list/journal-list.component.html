@@ -1,0 +1,12 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <a class="btn btn-success float-right" [routerLink]="['new']">Add Entry</a>
+    </div>
+    <div class="panel-body">
+        <app-journal-item 
+        *ngFor="let jour of journals; let i = index"
+        [journal]="jour"
+        [id]="i">
+        </app-journal-item>
+    </div>  
+</div>

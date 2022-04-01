@@ -1,0 +1,6 @@
+<a 
+  [routerLink]="[journal._id]"
+  routerLinkActive="active"
+  class="list-group-item clearfix documentDiv">
+    <p>{{ journal?.date | date: 'MM/dd/yyyy' }}</p>
+</a>
