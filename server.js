@@ -9,7 +9,7 @@ var mongoose = require('mongoose');
 var index = require('./server/routes/app');
 const journalRoutes = require('./server/routes/journal');
 
-mongoose.connect('mongodb://127.0.0.1:27017/journal',
+mongoose.connect('mongodb://localhost:27017/journal',
    { useNewUrlParser: true }, (err, res) => {
       if (err) {
          console.log('Connection failed: ' + err);
